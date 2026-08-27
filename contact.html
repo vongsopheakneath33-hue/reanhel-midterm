@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ទំនាក់ទំនង - ReanHel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="container nav-content">
+    <a class="logo" href="index.html">ReanHel</a>
+    <div class="nav-links">
+      <a href="index.html">ទំព័រដើម</a>
+      <a href="about.html">អំពីយើង</a>
+      <a href="services.html">សេវាកម្ម</a>
+      <a class="active" href="contact.html">ទំនាក់ទំនង</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <h1>ចុះឈ្មោះរៀនហែលទឹក</h1>
+    <div class="form-box">
+      <!-- HTML/CSS only: this form is for displaying the registration design. -->
+      <form action="#" method="post">
+        <label for="photo">1. រូបថត</label>
+        <input id="photo" type="file" name="photo" accept="image/*">
+
+        <label for="name-kh">2. ឈ្មោះភាសាខ្មែរ</label>
+        <input id="name-kh" type="text" placeholder="បញ្ចូលឈ្មោះជាភាសាខ្មែរ">
+
+        <label for="name-en">ឈ្មោះភាសាអង់គ្លេស</label>
+        <input id="name-en" type="text" placeholder="Enter English name">
+
+        <label for="age">3. អាយុ</label>
+        <input id="age" type="number" min="1" placeholder="បញ្ចូលអាយុ">
+
+        <label for="day">4. ថ្ងៃដែលចង់រៀន</label>
+        <select id="day">
+          <option>ជ្រើសរើសថ្ងៃ</option>
+          <option>ច័ន្ទ</option><option>អង្គារ</option><option>ពុធ</option>
+          <option>ព្រហស្បតិ៍</option><option>សុក្រ</option><option>សៅរ៍</option><option>អាទិត្យ</option>
+        </select>
+
+        <label for="time">ម៉ោងដែលចង់រៀន</label>
+        <select id="time">
+          <option>ជ្រើសរើសម៉ោង</option>
+          <option>6:00 - 7:00 AM</option><option>7:00 - 8:00 AM</option>
+          <option>5:00 - 6:00 PM</option><option>6:00 - 7:00 PM</option>
+        </select>
+
+        <button class="btn submit-btn" type="submit">ចុះឈ្មោះ</button>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>© 2026 ReanHel - រៀនហែលទឹក</footer>
+</body>
+</html>

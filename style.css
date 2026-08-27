@@ -1,0 +1,70 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, "Noto Sans Khmer", sans-serif;
+  line-height: 1.7;
+  color: #222;
+  background: #f5fbff;
+}
+
+.container { width: 90%; max-width: 1100px; margin: auto; }
+
+/* Navigation */
+.navbar { background: white; border-bottom: 1px solid #ddd; }
+.nav-content { min-height: 65px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.logo { color: #0788b5; font-size: 28px; font-weight: bold; text-decoration: none; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 5px; }
+.nav-links a { color: #222; text-decoration: none; padding: 9px 13px; border-radius: 5px; }
+.nav-links a:hover, .nav-links a.active { background: #dff5fc; color: #087fa8; }
+
+/* Home hero */
+.hero { min-height: 430px; display: flex; align-items: center; background: #dff5fc; }
+.hero h1 { color: #087fa8; font-size: 46px; margin-bottom: 15px; }
+.hero p { font-size: 21px; max-width: 650px; margin-bottom: 25px; }
+
+/* Buttons */
+.btn { display: inline-block; background: #0b8aad; color: white; text-decoration: none; border: 0; padding: 12px 25px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+.btn:hover { background: #076f8d; }
+
+/* Sections and cards */
+.section { padding: 70px 0; }
+.section > .container > h1, .section > .container > h2 { color: #087fa8; text-align: center; margin-bottom: 25px; }
+.center { max-width: 800px; margin: 0 auto 35px; text-align: center; font-size: 18px; }
+.left { text-align: left !important; margin-top: 25px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; margin-top: 35px; }
+.card { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.card h2, .card h3 { color: #087fa8; margin-bottom: 12px; }
+.card ol { padding-left: 25px; margin: 15px 0 20px; }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: center; }
+.instructor-photo { width: 100%; max-width: 450px; display: block; margin: auto; border-radius: 8px; }
+.about-grid h1 { color: #087fa8; margin-bottom: 20px; }
+
+/* Form */
+.form-box { max-width: 650px; margin: auto; background: white; padding: 35px; border: 1px solid #ddd; border-radius: 8px; }
+.form-box label { display: block; font-weight: bold; margin: 18px 0 6px; }
+.form-box input, .form-box select { width: 100%; padding: 13px; border: 1px solid #bbb; border-radius: 5px; font-size: 16px; background: white; }
+.submit-btn { width: 100%; margin-top: 25px; }
+
+/* Footer */
+footer { text-align: center; padding: 25px; background: #dff5fc; margin-top: 30px; }
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .nav-content { flex-direction: column; padding: 12px 0; }
+  .nav-links { justify-content: center; }
+  .hero { min-height: 350px; }
+  .hero h1 { font-size: 34px; }
+  .hero p { font-size: 18px; }
+  .cards, .about-grid { grid-template-columns: 1fr; }
+  .about-grid { gap: 35px; }
+}
+
+@media (max-width: 480px) {
+  .container { width: 92%; }
+  .nav-links a { padding: 7px 8px; font-size: 14px; }
+  .hero h1 { font-size: 29px; }
+  .form-box { padding: 22px; }
+}
